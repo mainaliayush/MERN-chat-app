@@ -6,22 +6,28 @@
 	"scripts": {
 		"server": "nodemon backend/server.js",
 		"start": "node backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-	},
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"dev": "npm run dev --prefix frontend"
+	  },
 	"type": "module",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"autoprefixer": "^10.4.20",
 		"bcryptjs": "^2.4.3",
 		"cookie-parser": "^1.4.6",
+		"daisyui": "^4.12.10",
 		"dotenv": "^16.4.1",
 		"express": "^4.18.2",
 		"jsonwebtoken": "^9.0.2",
 		"mongoose": "^8.1.1",
-		"socket.io": "^4.7.4"
+		"postcss": "^8.4.41",
+		"socket.io": "^4.7.4",
+		"tailwindcss": "^3.4.10"
 	},
 	"devDependencies": {
-		"nodemon": "^3.0.3"
+		"nodemon": "^3.0.3",
+		"vite": "^5.4.2"
 	}
 }
